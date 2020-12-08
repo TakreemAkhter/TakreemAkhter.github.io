@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "How I cleared the AZ-900 (Azure Fundamentals) Exam"
 date: 2020-12-08
 category: Azure
