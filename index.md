@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Homepage"
 ---
 # Hi, I am Takreem Akhter
 
