@@ -8,8 +8,6 @@ category: Azure
 <html>
 <div data-iframe-width="300" data-iframe-height="540" data-share-badge-id="be9714ac-3a6c-4357-912f-9dc44c8023f1" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
 </html> 
-
-
 - clear the basics of cloud computing. Understand granular terms like ip address, ports, virtualization, 
 a subnet, a server, a DNS, what are APIs
 - security settings is your nemisis: major work in understanding what is Network security group is?, 
