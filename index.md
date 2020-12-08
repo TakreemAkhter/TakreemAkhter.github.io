@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "About"
 ---
 # Hi, I am Takreem Akhter
