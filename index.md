@@ -1,4 +1,7 @@
-Hi, I am Takreem Akhter
+---
+title: "About"
+---
+# Hi, I am Takreem Akhter
 
 I am an **Azure Data Engineer** passionate about everything that is driven by data. 
 
