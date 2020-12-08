@@ -1,7 +1,7 @@
 ---
 title: "How I cleared the AZ-900 (Azure Fundamentals) Exam"
 date: 2020-12-08
-categories: "Azure"
+category: Azure
 ---
 - clear the basics of cloud computing. Understand granular terms like ip address, ports, virtualization, 
 a subnet, a server, a DNS, what are APIs
