@@ -5,7 +5,7 @@ date: 2020-12-08
 category: Azure
 ---
 <html>
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="be9714ac-3a6c-4357-912f-9dc44c8023f1" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+<div style="text-align: center;" data-iframe-width="350" data-iframe-height="270" data-share-badge-id="be9714ac-3a6c-4357-912f-9dc44c8023f1" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
 </html> 
 
 - clear the basics of cloud computing. Understand granular terms like ip address, ports, virtualization, 
