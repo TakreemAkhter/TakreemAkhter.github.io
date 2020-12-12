@@ -20,4 +20,4 @@ how is encryption build-in with VPN gateways and Application gateway
 - practice what you learned in azure. Either with a free account or the sandboxs that are provided.
 [show img of a module with a sandbox to make it clear]. This will be very helpful in ways you won't understand untill you give the exam.
 
-<img src="/assets/images/microsoft-certified-azure-fundamentals.png" alt="certificate">
+<img src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/microsoft-certified-azure-fundamentals.png?raw=true" alt="certificate">
