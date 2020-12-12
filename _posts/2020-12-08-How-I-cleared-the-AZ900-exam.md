@@ -19,7 +19,7 @@ Here are a few insights from my experience.
 
 ## 1. The Syllabus
 
-You are probably here after looking at it. If not, *you have to know what you are up against*, might as well do it now. View the syllabus [here](chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/index.html)
+You are probably here after looking at it. If not, *you have to know what you are up against*, might as well do it now. View the syllabus [here](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3VwUY)
 
 ## 2. Catch-up on those terminologies
 
