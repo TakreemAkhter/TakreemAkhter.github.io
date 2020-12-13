@@ -13,10 +13,7 @@ Microsoft's AZ-900 exam checks a candidate's foundational knowledge in cloud com
 
 I recently went through the process of preparing for this exam and subsequently cleared it.
 
-<html>
-
-<embed src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/pdfs/Azure_Fundamentals.pdf" type="application/pdf"   height="300px" width="200">
-</html>
+<html><embed src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/pdfs/Azure_Fundamentals.pdf" type="application/pdf"   height="300px" width="200"></html>
 
 As a beginner, I took enough time to be well-versed with the subject matter and have hands-on knowledge so that I am actually able to perform those tasks when the time comes. I would advice the same to you. If you spend ample time with each topic, it will serve as a good foundation when you pursue Azure's associate/expert certifications.
 
