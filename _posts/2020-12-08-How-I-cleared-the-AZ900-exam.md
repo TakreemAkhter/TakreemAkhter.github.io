@@ -5,15 +5,15 @@ date: 2020-12-08
 category: Azure
 published: True
 ---
-<html>
-
-<div style="object-position:center" data-iframe-width="350" data-iframe-height="270" data-share-badge-id="be9714ac-3a6c-4357-912f-9dc44c8023f1" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-
-</html> 
-
 Microsoft's AZ-900 exam checks a candidate's foundational knowledge in cloud computing and Azure services. It is meant for people new to this field, so even if you are not from a computer science background you should be able to clear it. This certification is a great way to prove your knowledge and zeal to learn. 
 
 I recently went through the process of preparing for this exam and subsequently cleared it.
+
+<html>
+
+<div data-iframe-width="350" data-iframe-height="270" data-share-badge-id="be9714ac-3a6c-4357-912f-9dc44c8023f1" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+
+</html> 
 
 As a beginner, I took enough time to be well-versed with the subject matter and have hands-on knowledge so that I am actually able to perform those tasks when the time comes. I would advice the same to you. If you spend ample time with each topic, it will serve as a good foundation when you pursue Azure's associate/expert certifications.
 
