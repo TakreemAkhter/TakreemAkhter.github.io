@@ -37,5 +37,5 @@ I realized the importance of guidance and decided to gain expertise from a profe
 *Finally, all that hard word proved worthwhile and I was able to clear the DP-200 exam. I became a Microsoft certified Azure Data Engineer Associate.*
 
 <html>
-<a href="https://www.youracclaim.com/badges/6b1a24ea-593e-4cad-ae48-3387311337b8/public_url"><img style="display:block;margin-left:auto;margin-right:auto;width:80%;;height:auto;" src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Azure_Data_Engineer_Certificate.jpg?raw=true" alt="data engineer certificate"></a>
+<a href="https://www.youracclaim.com/badges/6b1a24ea-593e-4cad-ae48-3387311337b8/public_url"><img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Azure_Data_Engineer_Certificate.jpg?raw=true" alt="data engineer certificate"></a>
 </html>
