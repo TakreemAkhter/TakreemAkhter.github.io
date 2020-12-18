@@ -3,7 +3,7 @@ layout: post
 title: "How I become a Microsoft Certified Azure Data Engineer Associate"
 date: 2020-12-15
 category: Azure
-published: False
+published: True
 ---
 
 Microsoft describes Azure Data Engineers as:
