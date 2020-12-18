@@ -26,7 +26,7 @@ After almost three weeks of hard work dedicating four hours per day on an averag
 
 Having all that knowledge under my belt, I scheduled my DP-200 exam to ten days after. 
 
-I realized the importance of guidance and decided to gain expertise from a professional trainer. I enrolled in *Eshant Garg's course on DP-200 namely "DP-200: Implementing an Azure Data Solution + Practice Tests"* on Udemy. I chose this course because it was recently updated and was in accordance to the new syllabus. I watched nearly 16 hours of video content, completed quizzes and practiced sample questions over the remaining days. The knowledge provided was top quality, everything was rigorously covered and clearly explained. The practice tests proved to be advantageous. 
+I realized the importance of guidance and decided to gain expertise from a professional trainer. I enrolled in *Eshant Garg's course on DP-200 namely "DP-200: Implementing an Azure Data Solution + Practice Tests"* on Udemy. I chose this course because it was recently updated and was in accordance to the new syllabus. I watched nearly 19 hours of video content, completed quizzes and practiced sample questions over the remaining days. The knowledge provided was top quality, everything was rigorously covered and clearly explained. The practice tests proved to be advantageous. 
 
 <html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;height:auto;" src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Udemy DP200 course.jpg?raw=true" alt="udemy">
