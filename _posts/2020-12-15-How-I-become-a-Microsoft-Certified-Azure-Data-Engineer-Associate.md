@@ -28,10 +28,14 @@ Having all that knowledge under my belt, I scheduled my DP-200 exam to ten days 
 
 I realized the importance of guidance and decided to gain expertise from a professional trainer. I enrolled in Eshant Garg's course on DP-200 namely "DP-200: Implementing an Azure Data Solution + Practice Tests" on Udemy. I chose this course because it was recently updated and was in accordance to the new syllabus. I watched nearly 16 hours of video content, completed quizzes and practiced sample questions over the remaining days. The knowledge provided was top quality, everything was rigorously covered and clearly explained. The practice tests proved to be advantageous. 
 
-<html><img width= 100% height= auto src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Udemy DP200 course.jpg?raw=true" alt="udemy"></html>
+<html>
+<img width= 100% height= auto src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Udemy DP200 course.jpg" alt="udemy">
+</html>
 
 <html><div data-iframe-width="320" data-iframe-height="270" data-share-badge-id="1d77d8b6-546d-45c0-8da3-53ba4c9232f6" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script></html>
 
 Finally, all that hard word proved worthwhile and I was able to clear the DP-200 exam. I became a Microsoft certified Azure Data Engineer Associate.
 
-<html><a href="https://www.youracclaim.com/badges/6b1a24ea-593e-4cad-ae48-3387311337b8/public_url"><img width= 100% height= auto src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Azure_Data_Engineer_Certificate.jpg?raw=true" alt="certificate"></a></html>
+<html>
+<a href="https://www.youracclaim.com/badges/6b1a24ea-593e-4cad-ae48-3387311337b8/public_url"><img width= 100% height= auto src="https://github.com/TakreemAkhter/DataDriven.blog/blob/main/assets/images/Azure_Data_Engineer_Certificate.jpg" alt="certificate"></a>
+</html>
