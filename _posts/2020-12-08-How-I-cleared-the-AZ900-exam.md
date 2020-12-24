@@ -48,9 +48,3 @@ This is one of the important services offered by Microsoft, make sure you are th
 > One of the best websites to learn about the aforementioned topics is [docs.microsoft](https://docs.microsoft.com/en-us/) and [Microsoft's blog on Azure](https://azure.microsoft.com/en-in/blog/)
 
 
-
-<html>
-
-{% include share-buttons.html %}
-
-</html>

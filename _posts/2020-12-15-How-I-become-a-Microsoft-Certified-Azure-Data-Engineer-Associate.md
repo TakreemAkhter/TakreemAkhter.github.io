@@ -39,9 +39,3 @@ I realized the importance of guidance and decided to gain expertise from a profe
 <html>
 <a href="https://www.youracclaim.com/badges/6b1a24ea-593e-4cad-ae48-3387311337b8/public_url"><img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/Azure_Data_Engineer_Certificate.jpg?raw=true" alt="data engineer certificate"></a>
 </html>
-
-<html>
-
-{% include share-buttons.html %}
-
-</html>
