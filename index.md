@@ -9,3 +9,11 @@ I write about Big-Data, Machine Learning and the services provided by Microsoft 
 
 
 > *Additionally, I document my ventures into this Data-Driven world.* 
+
+
+
+<html>
+
+{% include share-buttons.html %}
+
+</html>
