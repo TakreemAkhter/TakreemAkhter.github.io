@@ -49,3 +49,8 @@ This is one of the important services offered by Microsoft, make sure you are th
 
 
 
+<html>
+
+{% include share-buttons.html %}
+
+</html>
