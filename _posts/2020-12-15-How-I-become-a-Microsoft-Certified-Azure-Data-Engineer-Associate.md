@@ -6,10 +6,6 @@ category: Azure
 published: True
 ---
 
-{% include reading-time.html %}
-
-
-
 Microsoft describes Azure Data Engineers as people who:
 
 > ... design and implement the management, monitoring, security and privacy of data using full stack of Azure data services to satisfy business needs.

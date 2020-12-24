@@ -5,8 +5,6 @@ date: 2020-12-08
 category: Azure
 published: True
 ---
-{% include reading-time.html %}
-
 Microsoft's AZ-900 exam checks a candidate's foundational knowledge in cloud computing and Azure services. It is meant for people new to this field, so even if you are not from a computer science background you should be able to clear it. This certification is a great way to prove your knowledge and zeal to learn. 
 
 I recently went through the process of preparing for this exam and subsequently cleared it.
