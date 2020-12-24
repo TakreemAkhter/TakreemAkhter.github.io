@@ -11,7 +11,6 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       
-      {% include reading-time.html %}
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
@@ -26,6 +25,8 @@ layout: default
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
+      <p class="content-read-time">
+      {% include reading-time.html %}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
