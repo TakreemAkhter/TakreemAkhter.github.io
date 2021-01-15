@@ -18,7 +18,7 @@ For the uninitiated,
 
 There is data on 10 countries but our dataset of interest is for India. 
 
-You can view my notebook [here]--github_link
+**You can view my notebook [here](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1294872003561177/2970472917297418/7024709780737754/latest.html) or by visiting my [GitHub repo](https://github.com/TakreemAkhter/Data-pipeline-for-Youtube-trending-videos-dataset).**
 
 ## <u>Problems with the dataset</u>
 
