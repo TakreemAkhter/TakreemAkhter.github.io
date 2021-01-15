@@ -6,7 +6,7 @@ category: databricks
 published: True
 ---
 
-The dataset for the Indian YouTube trending page is not proper to perform insightful analysis. So, I created a ETL pipeline to clean-up the dataset and make it earlier to perform analysis. This post is all about how I created this pipeline using PySpark on the Databricks platform.
+The dataset for the Indian YouTube trending page is not proper to perform insightful analysis. So, I created a ETL pipeline to clean-up the dataset and make it easier to perform analysis. This post is all about how I created this pipeline using PySpark on the Databricks platform.
 
 For the uninitiated, 
 
