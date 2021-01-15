@@ -6,6 +6,10 @@ category: databricks
 published: True
 ---
 
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/images/Youtube_banner.png?raw=true" alt="youtube_banner">
+</html>
+
 The dataset for the Indian YouTube trending page is not proper to perform insightful analysis. So, I created a ETL pipeline to clean-up the dataset and make it easier to perform analysis. This post is all about how I created this pipeline using PySpark on the Databricks platform.
 
 For the uninitiated, 
