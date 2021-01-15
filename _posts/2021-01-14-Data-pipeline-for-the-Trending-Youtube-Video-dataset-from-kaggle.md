@@ -11,8 +11,9 @@ The dataset for the Indian YouTube trending page is not proper to perform insigh
 
 
 <html>
-<img style="display:block;margin-left:auto;margin-right:auto;width:100%;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/youtube_banner.jpg?raw=true" alt="youtube_banner">
+<img style="display:block;margin-left:auto;margin-right:auto;width:80%;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/youtube_banner.jpg?raw=true" alt="youtube_banner">
 </html>
+
 
 For the uninitiated, 
 
