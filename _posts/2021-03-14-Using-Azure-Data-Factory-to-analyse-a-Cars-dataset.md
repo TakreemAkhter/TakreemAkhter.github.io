@@ -54,7 +54,7 @@ We will be creating two pipelines.
    <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/2760f7641a3eb7b03f996380da02fa9ec29aeba5/assets/images/execute%20pipeline.PNG?raw=true" alt="image">
    </html>
 
-## <u>Building Transformation logic for *Carsdataflow*</u>
+## <u>Building Transformation logic for Carsdataflow</u>
 
 Here, we'll build a data flow that takes the "Car details from Car Dekho.csv" in ADLS storage, finds the average selling price, average kilometer driven, total number of cars available and the total number of unique cars available for each owner-type. Then we'll write this file back to the ADLS storage.
 
@@ -134,7 +134,7 @@ In the end, you will get something like the below image.
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/2760f7641a3eb7b03f996380da02fa9ec29aeba5/assets/images/Cardataflow.PNG?raw=true" alt="image">
 </html>
 
-## <u>Building Transformation logic for *RecommendCarsdataflow*</u>
+## <u>Building Transformation logic for RecommendCarsdataflow</u>
 
 Here, we will join the original dataset with the output from the previous pipeline after some modification and find the cars that are value for money.
 
