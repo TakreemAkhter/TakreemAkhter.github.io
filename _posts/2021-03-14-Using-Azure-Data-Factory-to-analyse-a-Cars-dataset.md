@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Azure Data Factory to find cars that are value for money"
+title: "Using Azure Data Factory to analyze a Cars dataset"
 date: 2021-03-14
 category: Azure
 published: True
