@@ -1,6 +1,7 @@
 title: DataDriven
-author: Takreem Akhter
-email: akhtertakreem@gmail.com
+author: 
+ name: Takreem Akhter
+ email: akhtertakreem@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Blog about Big-Data, Machine Learning, Azure services.
   Especially about tools like Apache Spark with PySpark API,
@@ -16,3 +17,6 @@ google_analytics: G-PWB3ED7RP5
 show_excerpts: true # set to false to remove excerpts on the homepage
 
 theme: minima
+
+plugins:
+- jekyll-seo-tag
