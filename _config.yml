@@ -3,7 +3,8 @@ author:
  name: Takreem Akhter
  email: akhtertakreem@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I write about the world of data science, with focus on topics like Big-Data, data engineering best practices and tool (enterprise and open-source) associated with it like Azure data services, Apache Spark and Python and Scala programming languages.My posts are generally guides and tutorials about Microsoft Azure services like Azure Data Factory, Synapse Analytics and Azure Databricks. 
+  
+I write about the world of data science, with focus on topics like Big-Data, data engineering best practices and tool (enterprise and open-source) associated with it like Azure data services, Apache Spark and Python and Scala programming languages.My posts are generally guides and tutorials about Microsoft Azure services like Azure Data Factory, Synapse Analytics and Azure Databricks. 
 
 # social links
 linkedin_username: takreem-akhter # DO NOT include the @ character, or else the build will fail!
