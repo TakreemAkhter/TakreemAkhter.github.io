@@ -21,7 +21,7 @@
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link" href="https://us6.list-manage.com/contact-form?u=9e7adf97d965fc7a3c459d3e5&form_id=efd9bde49543f02acebbd1a8b8d3df21">Contact</a>
+            <a class="page-link" href="https://us6.list-manage.com/contact-form?u=9e7adf97d965fc7a3c459d3e5&form_id=efd9bde49543f02acebbd1a8b8d3df21">Contact Me</a>
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
