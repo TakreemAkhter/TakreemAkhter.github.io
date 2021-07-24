@@ -1,11 +1,13 @@
-title: DataDriven
-author: Takreem Akhter
-email: akhtertakreem@gmail.com
+title: A Data Engineer's Blog
+author: 
+ name: Takreem Akhter
+ email:  
 description: > # this means to ignore newlines until "baseurl:"
-  Blog about Big-Data, Machine Learning, Azure services.
-  Especially about tools like Apache Spark with PySpark API,
-  Python Data-Science libraries, Azure Data Factory, Azure Data Lake,
-  Synapse Analytics, cosmosDB and the databricks platform.
+ I write about the world of data science, with focus on topics like Big-Data, data 
+ engineering best practices and tool (enterprise and open-source) associated with it 
+ like Azure data services, Apache Spark and Python and Scala programming 
+ languages. My posts are generally guides and tutorials about Microsoft Azure services 
+ like Azure Data Factory, Synapse Analytics and Azure Databricks. 
 
 # social links
 linkedin_username: takreem-akhter # DO NOT include the @ character, or else the build will fail!
@@ -15,4 +17,11 @@ google_analytics: G-PWB3ED7RP5
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
+header_pages:
+ - index.md
+
 theme: minima
+
+plugins:
+- jekyll-seo-tag
+- jekyll-feed
