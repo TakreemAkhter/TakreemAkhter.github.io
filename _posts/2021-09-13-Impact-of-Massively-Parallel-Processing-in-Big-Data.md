@@ -3,13 +3,21 @@ layout: post
 title: "Intro to Massively Parallel Processing"
 date: 2021-09-13
 category: Data Engineering
-published: False
+published: True
 ---
 
 Massively Parallel Processing(MPP) databases have been around for decades, but their cost and the complexity of managing them has dropped tremendously in the last decade. The only option until recently was to self-host these databases, but more recently, they have migrated to the cloud.
 
 It is an important part of any modern data-warehouse and database architecture and its one of the reasons that analytics is possible across petabytes of data, famously known as Big-Data scenarios. They help companies find insight and create business value. Hence, its imperative that anyone working with tools like the ones mentioned below, know about them and get one step closer to using them better. 
-[img]
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/Data%20Warehouse%20examples.PNG?raw=true" alt="DW examples">
+</html>
+
+
+
+[TOC]
+
+
 
 ## Definitions
 
@@ -19,7 +27,9 @@ Before we move any further, we need a basic understanding of what we are going t
 
 A data warehouse centralizes and consolidates large amounts of **structured** data from multiple sources. It is designed to enable and support business intelligence (BI) activities, especially analytics.
 
-[img]
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/Data%20warehouse%20usecase.png?raw=true" alt="DW usecase">
+</html>
 
 #### Massively Parallel Processing:
 
@@ -31,7 +41,9 @@ It is a means of crunching huge amounts of data by distributing the processing o
 - They communicate with each other using some form of messaging interface.
 - MPP can be setup with a shared nothing or shared disk architecture, Like in the image below.
 
-[img]
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/MPP%20Shareed%20nothing%20architecture.jpg?raw=true" alt="Shared nothing architecture">
+</html>
 
 In a shared nothing architecture, there is no single point of contention(meaning, there is no conflict among multiple processes over shared resources) across the system and the nodes do not share memory or disk storage. Data is horizontally partitioned across nodes such that each node has a subset of rows from each table in the database. Each node then processes only the rows in its own disks.
 
@@ -39,7 +51,9 @@ Systems on this architecture can achieve massive scale as there is no single bot
 
 Below is a labelled diagram of MPP architecture:
 
-[img]
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/MPP%20Architecture.png?raw=true" alt="MPP Architecture">
+</html>
 
 **Leader node:** This is the brain of the architecture which acts like a front end as it interacts with all the applications and connections. It develops the query execution plan and coordinates the execution of code in each compute node parallelly. 
 
