@@ -19,17 +19,17 @@ It is an important part of any modern data-warehouse and database architecture a
 
 **Table of content:**
 
-- [Definition](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Definitions)
-  - [Data Warehouse](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Data-Warehouse)
-  - [Massively Parallel Processing](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Massively-Parallel-Processing)
-- [Deeper into MPP Architecture](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Deeper-into-MPP-Architecture)
-- [Columnar storage](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Columnar-storage)
+- [Definition](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#definitions)
+  - [Data Warehouse](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#data-warehouse)
+  - [Massively Parallel Processing](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#massively-parallel-processing)
+- [Deeper into MPP Architecture](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#deeper-into-mpp-architecture)
+- [Columnar storage](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#columnar-storage)
 
-## [Definitions](#Definitions)
+## [Definitions](#definitions)
 
 Before we move any further, we need a basic understanding of what we are going to discuss.
 
-#### [Data Warehouse](#Data-Warehouse):
+#### [Data Warehouse](#data-warehouse):
 
 A data warehouse centralizes and consolidates large amounts of **structured** data from multiple sources. It is designed to enable and support business intelligence (BI) activities, especially analytics.
 
@@ -37,13 +37,13 @@ A data warehouse centralizes and consolidates large amounts of **structured** da
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/Data%20warehouse%20usecase.png?raw=true" alt="DW usecase">
 </html>
 
-#### [Massively Parallel Processing](#Massively-Parallel-Processing):
+#### [Massively Parallel Processing](#massively-parallel-processing):
 
 It is a means of crunching huge amounts of data by distributing the processing over hundreds or thousands of processors. The problem being worked on is divided into many pieces, which are processed simultaneously by the multiple systems.
 
 
 
-## [Deeper into MPP Architecture](#Deeper-into-MPP-Architecture)
+## [Deeper into MPP Architecture](#deeper-into-mpp-architecture)
 
 - Each processor uses its own OS and memory.
 - They communicate with each other using some form of messaging interface.
@@ -75,7 +75,7 @@ Below is a labelled diagram of MPP architecture:
 
 Nowadays, MPP architecture is used to process relational and non-relational data.
 
-## [Columnar storage](#Columnar-storage)
+## [Columnar storage](#columnar-storage)
 
 A data warehouse is a OLAP (Online Analytical Processing) system and using columnar storage is beneficial in such systems. We will try to understand this with an example.
 
