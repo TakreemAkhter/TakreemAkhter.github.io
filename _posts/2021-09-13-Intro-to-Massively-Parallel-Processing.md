@@ -15,13 +15,15 @@ It is an important part of any modern data-warehouse and database architecture a
 
 
 
-Table of content:
 
-- [Definition]()
-  - [Data Warehouse]()
-  - [Massively Parallel Processing]()
-- [Deeper into MPP Architecture]()
-- [Columnar storage]()
+
+**Table of content:**
+
+- [Definition](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Definitions)
+  - [Data Warehouse](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Data-Warehouse)
+  - [Massively Parallel Processing](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Massively-Parallel-Processing)
+- [Deeper into MPP Architecture](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Deeper-into-MPP-Architecture)
+- [Columnar storage](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#Columnar-storage)
 
 ## [Definitions](#Definitions)
 
