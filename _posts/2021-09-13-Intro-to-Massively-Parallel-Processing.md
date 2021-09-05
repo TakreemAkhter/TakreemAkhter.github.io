@@ -15,8 +15,6 @@ It is an important part of any modern data-warehouse and database architecture a
 
 
 
-
-
 **Table of content:**
 
 - [Definition](https://takreemakhter.github.io/data%20engineering/2021/09/05/Intro-to-Massively-Parallel-Processing.html#definitions)
@@ -109,11 +107,11 @@ to reiterate, **columnar storage is used under the following conditions:**
 - You query on less number of columns
 - You have very large tables with millions and billions of rows.
 
-And when you use this form of storage under the following conditions, **you have the following advantages**: 
+And when you use this form of storage under the above conditions, **you have the following advantages**: 
 
 - Improved query performance
 - Support compression(which make it even faster) like AZ64, LZO compression, etc.
 - Reduce storage cost
 
-Hence data warehouses convert your row-oriented database tp columnar database. 
+Hence data warehouses convert your row-oriented database to columnar database. 
 
