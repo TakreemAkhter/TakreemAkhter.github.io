@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intro to Massively Parallel Processing"
-date: 2021-09-13
+date: 2021-09-05
 category: Data Engineering
 published: True
 ---
@@ -20,6 +20,7 @@ It is an important part of any modern data-warehouse and database architecture a
 
 
 ## Definitions
+[Definitions](## Definitions)
 
 Before we move any further, we need a basic understanding of what we are going to discuss.
 
@@ -54,6 +55,8 @@ Below is a labelled diagram of MPP architecture:
 <html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/MPP%20Architecture.png?raw=true" alt="MPP Architecture">
 </html>
+
+
 
 **Leader node:** This is the brain of the architecture which acts like a front end as it interacts with all the applications and connections. It develops the query execution plan and coordinates the execution of code in each compute node parallelly. 
 
@@ -106,3 +109,4 @@ And when you use this form of storage under the following conditions, **you have
 - Reduce storage cost
 
 Hence data warehouses convert your row-oriented database tp columnar database. 
+
