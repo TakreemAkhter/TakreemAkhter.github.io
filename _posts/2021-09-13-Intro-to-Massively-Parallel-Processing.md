@@ -15,16 +15,19 @@ It is an important part of any modern data-warehouse and database architecture a
 
 
 
-[TOC]
+Table of content:
 
+- [Definition]()
+  - [Data Warehouse]()
+  - [Massively Parallel Processing]()
+- [Deeper into MPP Architecture]()
+- [Columnar storage]()
 
-
-## Definitions
-[Definitions](## Definitions)
+## [Definitions](#Definitions)
 
 Before we move any further, we need a basic understanding of what we are going to discuss.
 
-#### Data Warehouse:
+#### [Data Warehouse](#Data-Warehouse):
 
 A data warehouse centralizes and consolidates large amounts of **structured** data from multiple sources. It is designed to enable and support business intelligence (BI) activities, especially analytics.
 
@@ -32,11 +35,13 @@ A data warehouse centralizes and consolidates large amounts of **structured** da
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/Data%20warehouse%20usecase.png?raw=true" alt="DW usecase">
 </html>
 
-#### Massively Parallel Processing:
+#### [Massively Parallel Processing](#Massively-Parallel-Processing):
 
 It is a means of crunching huge amounts of data by distributing the processing over hundreds or thousands of processors. The problem being worked on is divided into many pieces, which are processed simultaneously by the multiple systems.
 
-## Deeper into MPP Architecture
+
+
+## [Deeper into MPP Architecture](#Deeper-into-MPP-Architecture)
 
 - Each processor uses its own OS and memory.
 - They communicate with each other using some form of messaging interface.
@@ -68,7 +73,7 @@ Below is a labelled diagram of MPP architecture:
 
 Nowadays, MPP architecture is used to process relational and non-relational data.
 
-## Columnar storage
+## [Columnar storage](#Columnar-storage)
 
 A data warehouse is a OLAP (Online Analytical Processing) system and using columnar storage is beneficial in such systems. We will try to understand this with an example.
 
