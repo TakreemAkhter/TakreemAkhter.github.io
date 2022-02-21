@@ -311,7 +311,9 @@ Below is the complete JSON script of the pipeline for you to have a look into th
 
 For this demonstration I used a csv file with following data:
 
-IMAGE OF THE FILE
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:70%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/dynamic_map_csv_input.PNG?raw=true" alt="csv_input">
+</html>
 
 I placed this file in the Azure Data Lake Storage Gen2 and created a linked service in ADF to connect to the data store. To learn how to setup a linked service, refer [this link](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal#create-a-linked-service). Then, follow the below steps:
 
@@ -319,23 +321,46 @@ I placed this file in the Azure Data Lake Storage Gen2 and created a linked serv
 - [x] Setup the dataset for parquet file to be copied to ADLS
 - [x] Create the pipeline
 
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/things%20created%20in%20adf.PNG?raw=true" alt="">
+</html>
+
 ## Setup the source Dataset
 
 After you create a csv dataset with an ADLS linked service, you can either parametrize it or hardcode the file location. You can refer the below images to set it up. Parameterizing it gives you the ability to feed the file path and its name through the pipeline. 
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/csv%20dataset.PNG?raw=true" alt="">
+</html>
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/csv%20dataset2.PNG?raw=true" alt="">
+</html>
 
 ## Setup the sink Dataset
 
 Similarly, you can setup a parquet dataset with ADLS linked service. Refer the below images:
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/parquet%20dataset.PNG?raw=true" alt="">
+</html>
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/parquet%20dataset2.PNG?raw=true" alt="">
+</html>
 
 ## Create the Pipeline 
 
 To give you a visual of the pipeline, below is an image of it.
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/adf_pipeline.PNG?raw=true" alt="">
+</html>
 
 Below are all the parameters and variable created:
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:80%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/all%20parameters.PNG?raw=true" alt="">
+</html>
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:80%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/all%20variables.PNG?raw=true" alt="">
+</html>
 
 Now, we will go through each activity of the pipeline.
 
@@ -343,21 +368,33 @@ Now, we will go through each activity of the pipeline.
 
 Apart from the file name and file path, we have to pass header as "False" to the source dataset. Retrieve just the first row from the file.
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/lookup%20setting.PNG?raw=true" alt="">
+</html>
 
 Below is the image of the output that we get from the activity.
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/lookup%20output.PNG?raw=true" alt="">
+</html>
 
 ### Set Variable (header_names)
 
 Header_names is a variable of array type. Here, we use the output of the lookup activity and create a list with each key-value pair an element of the list. We use the [split](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/splitfunction) function and `","` as the delimiter to avoid any complication if the header itself has commas in them. This way, it only splits the string if a comma is preceded and succeeded by double-quotes. One additional thing that we do here is replace the opening and closing braces with empty string so that we just get those key-value pairs. Below is the value set to this variable 
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/set_header_names%20output%20list.PNG?raw=true" alt="">
+</html>
 
 ### ForEach (value in the header_names list)
 
-In this activity, we go through each element of the array created in the previous list and extract the original header, create a new header name with the spaces, tabs and other special characters removed and append it to a array variable. We use 3 activities inside this loop, which are:
+In this activity, we go through each element of the array created in the previous list and extract the original header, create a new header name with the spaces, tabs and other special characters removed and append it to a array variable. 
+
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/foreach_acty%20setting.PNG?raw=true" alt="">
+</html>
+
+We use 3 activities inside this loop, which are:
 
 1. **Set variable (original_header)** - Here, we extract the substring starting from `:` , i.e., the index after the colon to the end of the string. Additionally, we remove the double-quotes that exist in the string. Below is the expression used:
 
@@ -388,7 +425,9 @@ In this activity, we go through each element of the array created in the previou
 
    Below is an image to show one of the elements of this variable.
 
-    
+   <html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/1%20of%20append_json%20output.PNG?raw=true" alt="">
+</html>
 
 ### Set Variable (mapping_script)
 
@@ -398,27 +437,40 @@ This activity is used to generate the final JSON script and store it in a string
 
 Below is the output of this variable:
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:70%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/output%20of%20set%20mapping%20script.PNG?raw=true" alt="">
+</html>
 
 ### Copy Activity
 
 Below are the details for the source, followed by sink of the copy activity:
 
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:70%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/copy%20acty%20source%20setting.PNG?raw=true" alt="">
+</html>
 
-
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:70%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/copy%20acty%20sink%20setting.PNG?raw=true" alt="">
+</html>
 
 The important thing to note here is to pass header as **True** to the source dataset.
 
 Then we can just pass the string variable `mapping_script` as a JSON to the `Mapping` section of the copy activity as shown below:
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/copy%20acty%20mapping%20setting.PNG?raw=true" alt="">
+</html>
 
 ## Output of the pipeline
 
 The pipeline runs with 24 seconds as shown below.
 
-
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/monitor%20tab.PNG?raw=true" alt="">
+</html>
 
 The parquet file generated, has the desired header when read in Databricks as shown below:
 
+<html>
+<img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/parquet_actual_result.PNG?raw=true" alt="">
+</html>
