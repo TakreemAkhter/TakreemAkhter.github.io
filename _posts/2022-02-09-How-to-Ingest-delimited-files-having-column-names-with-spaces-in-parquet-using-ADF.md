@@ -386,6 +386,9 @@ Header_names is a variable of array type. Here, we use the output of the lookup 
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/set_header_names%20output%20list.PNG?raw=true" alt="">
 </html>
 
+Below is the expression used to achieve it:
+`@split(replace(replace(string(activity('Lookup_file').output.firstRow),'{',''),'}',''),'\",\"')`
+
 ### ForEach (value in the header_names list)
 
 In this activity, we go through each element of the array created in the previous list and extract the original header, create a new header name with the spaces, tabs and other special characters removed and append it to a array variable. 
@@ -400,12 +403,9 @@ We use 3 activities inside this loop, which are:
 
    `@replace(substring(item(),add(indexOf(item(),':'),2),sub(length(item()),add(indexOf(item(),':'),2))),'\"','')`
 
-2.  **Set variable (new_header)** - Here we use the `original_header` variable and trim it, remove tabs and other special characters and replace spaces with under-scores (_). 
-
-   When I created these activities, I realized that the required output can be achieved with just one activity until I tried it and came to know that **self-referencing of variables is not allowed in ADF**. Below is the expression used:
-
-   `@replace(replace(trim(variables('original_header')),' ','_'),'\\t','')` 
-
+2.  **Set variable (new_header)** - Here we use the `original_header` variable and trim it, remove tabs and other special characters and replace spaces with under-scores (_). When I created these activities, I realized that the required output can be achieved with just one activity until I tried it and came to know that **self-referencing of variables is not allowed in ADF**. Below is the expression used:
+    `@replace(replace(trim(variables('original_header')),' ','_'),'\\t','')` 
+   
 3. **Append variable (json_map)** - In this activity, we append one JSON object at a time to the `json_map` array-type variable. Array is the only variable type that can store JSON objects in ADF. Here we create a part of the mapping script that is required in the copy activity. The structure that is required by the ADF is shown below:
 
    ```
@@ -474,3 +474,5 @@ The parquet file generated, has the desired header when read in Databricks as sh
 <html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/parquet_actual_result.PNG?raw=true" alt="">
 </html>
+
+This way you can dynamically replace spaces between column names and convert your delimited file to parquet. This pipeline can be a separate [execute pipeline activity](https://docs.microsoft.com/en-us/azure/data-factory/control-flow-execute-pipeline-activity) which you can call whenever you need this operation in your ETL pipeline. 
