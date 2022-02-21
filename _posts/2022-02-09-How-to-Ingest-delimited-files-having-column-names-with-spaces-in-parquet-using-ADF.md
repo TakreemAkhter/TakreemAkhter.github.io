@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How to: Ingest delimited files having column names with spaces in parquet using ADF"
+title: "How to: Copy delimited files having column names with spaces in parquet format using ADF"
 date: 2022-02-09
 category: Azure Data Factory
-published: False
+published: True
 ---
 
 Delimited files which have column names with spaces cannot directly be ingested in parquet format using the Azure Data Factory's copy activity. We encounter the following error:
