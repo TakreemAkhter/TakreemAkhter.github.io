@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to: Copy delimited files having column names with spaces in parquet format using ADF"
-date: 2022-02-22
+date: 2022-02-09
 category: Azure Data Factory
 published: True
 ---
