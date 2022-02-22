@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to: Copy delimited files having column names with spaces in parquet format using ADF"
-date: 2022-02-09
+date: 2022-02-22
 category: Azure Data Factory
 published: True
 ---
@@ -325,7 +325,7 @@ I placed this file in the Azure Data Lake Storage Gen2 and created a linked serv
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/things%20created%20in%20adf.PNG?raw=true" alt="">
 </html>
 
-## Setup the source Dataset
+## 1. <u>Setup the source Dataset</u>
 
 After you create a csv dataset with an ADLS linked service, you can either parametrize it or hardcode the file location. You can refer the below images to set it up. Parameterizing it gives you the ability to feed the file path and its name through the pipeline. 
 <html>
@@ -335,7 +335,7 @@ After you create a csv dataset with an ADLS linked service, you can either param
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/csv%20dataset2.PNG?raw=true" alt="">
 </html>
 
-## Setup the sink Dataset
+## 2. <u>Setup the sink Dataset</u>
 
 Similarly, you can setup a parquet dataset with ADLS linked service. Refer the below images:
 <html>
@@ -345,7 +345,7 @@ Similarly, you can setup a parquet dataset with ADLS linked service. Refer the b
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/parquet%20dataset2.PNG?raw=true" alt="">
 </html>
 
-## Create the Pipeline 
+## 3. <u>Create the Pipeline</u> 
 
 To give you a visual of the pipeline, below is an image of it.
 
@@ -364,9 +364,9 @@ Below are all the parameters and variable created:
 
 Now, we will go through each activity of the pipeline.
 
-### Lookup file header
+### 3.1 <u>Lookup file header</u>
 
-Apart from the file name and file path, we have to pass header as "False" to the source dataset. Retrieve just the first row from the file.
+Apart from the file name and file path, we have to pass header as "False" to the source dataset and retrieve just the first row from the file.
 
 <html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:100%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/lookup%20setting.PNG?raw=true" alt="">
@@ -378,7 +378,7 @@ Below is the image of the output that we get from the activity.
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/lookup%20output.PNG?raw=true" alt="">
 </html>
 
-### Set Variable (header_names)
+### 3.2 <u>Set Variable (header_names)</u>
 
 Header_names is a variable of array type. Here, we use the output of the lookup activity and create a list with each key-value pair an element of the list. We use the [split](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/splitfunction) function and `","` as the delimiter to avoid any complication if the header itself has commas in them. This way, it only splits the string if a comma is preceded and succeeded by double-quotes. One additional thing that we do here is replace the opening and closing braces with empty string so that we just get those key-value pairs. Below is the value set to this variable 
 
@@ -389,9 +389,9 @@ Header_names is a variable of array type. Here, we use the output of the lookup 
 Below is the expression used to achieve it:
 `@split(replace(replace(string(activity('Lookup_file').output.firstRow),'{',''),'}',''),'\",\"')`
 
-### ForEach (value in the header_names list)
+### 3.3 <u>ForEach (value in the header_names list)</u>
 
-In this activity, we go through each element of the array created in the previous list and extract the original header, create a new header name with the spaces, tabs and other special characters removed and append it to a array variable. 
+In this activity, we go through each element of the array created in the previous activity and extract the original header, create a new header name with the spaces, tabs and other special characters removed and append it to an array variable. 
 
 <html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/foreach_acty%20setting.PNG?raw=true" alt="">
@@ -425,11 +425,11 @@ We use 3 activities inside this loop, which are:
 
    Below is an image to show one of the elements of this variable.
 
-   <html>
+<html>
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/1%20of%20append_json%20output.PNG?raw=true" alt="">
 </html>
 
-### Set Variable (mapping_script)
+### 3.4 <u>Set Variable (mapping_script)</u>
 
 This activity is used to generate the final JSON script and store it in a string-type variable mapping_script. Here, we append a few important details to our script so that ADF can recognize it as a mapping script and remove few characters from the string which arise when we concatenate an array to a string. Below is the expression:
 
@@ -441,7 +441,7 @@ Below is the output of this variable:
 <img style="display:block;margin-left:auto;margin-right:auto;width:70%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/output%20of%20set%20mapping%20script.PNG?raw=true" alt="">
 </html>
 
-### Copy Activity
+### 3.5 <u>Copy Activity</u>
 
 Below are the details for the source, followed by sink of the copy activity:
 
@@ -461,7 +461,7 @@ Then we can just pass the string variable `mapping_script` as a JSON to the `Map
 <img style="display:block;margin-left:auto;margin-right:auto;width:60%;;height:auto;" src="https://github.com/TakreemAkhter/TakreemAkhter.github.io/blob/main/assets/images/copy%20acty%20mapping%20setting.PNG?raw=true" alt="">
 </html>
 
-## Output of the pipeline
+## 4. <u>Output of the pipeline</u>
 
 The pipeline runs with 24 seconds as shown below.
 
